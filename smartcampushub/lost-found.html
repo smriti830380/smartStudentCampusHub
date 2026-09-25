@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lost & Found | SMART STUDENT CAMPUS HUB</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-page">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-icon">
+            <span class="brand-icon-inner">KIET</span>
+          </span>
+          <span class="brand-text">
+            <span class="brand-title">KIET</span>
+            <span class="brand-subtitle">Smart Campus</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="user-avatar" id="sidebarAvatar">AN</div>
+        <div>
+          <span class="user-name" id="sidebarStudentName">Student Name</span>
+          <span class="user-meta" id="sidebarStudentMeta">Course • Branch • Semester</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <span class="nav-title">Main Navigation</span>
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 10l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Overview</span>
+        </a>
+        <a class="side-link" href="academics.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Academics</span>
+        </a>
+        <a class="side-link" href="syllabus.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 3h14v18H5z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Syllabus</span>
+        </a>
+        <a class="side-link" href="exam-zone.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 5h16v6H4zM4 13h16v6H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Exam Zone</span>
+        </a>
+        <a class="side-link" href="quiz-zone.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 4h14v16H5z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Quiz Zone</span>
+        </a>
+        <a class="side-link" href="events.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 18l5-5 4 4 7-8" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Events</span>
+        </a>
+        <a class="side-link active" href="lost-found.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16v10H4zM7 17h10v4H7z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Lost &amp; Found</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 19a9 9 0 0 1 18 0" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Profile</span>
+        </a>
+        <a class="side-link" id="logoutLink" href="login.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 17l5-5-5-5" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <section class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div class="topbar-left">
+          <span class="breadcrumb">KIET / Student Services</span>
+          <h1 class="page-title">Lost &amp; Found</h1>
+        </div>
+        <div class="topbar-right">
+          <span class="topbar-date" id="todayDate"></span>
+          <span class="topbar-user">
+            <span class="mini-avatar" id="miniAvatar">AN</span>
+            <span class="topbar-name" id="topbarStudentName">Student Name</span>
+          </span>
+        </div>
+      </header>
+
+      <main class="lost-found-page">
+        <section class="page-banner lost-found-banner">
+          <div class="banner-content">
+            <span class="section-kicker">
+              <span class="kicker-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 10l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </span>
+              KIET Campus Support Desk
+            </span>
+            <h1>Lost &amp; Found System</h1>
+            <p class="page-intro">Reconnect with a lost item or help recover an item safely reported by another KIET community member.</p>
+            <div class="hero-actions compact-actions">
+              <a class="btn btn-primary" href="#lostFoundGrid">
+                <span>Browse Items</span>
+              </a>
+              <a class="btn btn-secondary" href="#lostFoundForm">
+                <span>Submit an Item</span>
+              </a>
+            </div>
+          </div>
+          <div class="banner-aside">
+            <div class="lost-found-spotlight">
+              <span class="spotlight-label">Campus Desk</span>
+              <span class="spotlight-value">Open 08:00 - 20:00</span>
+              <span class="spotlight-text">Library Block • Main Gate</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="lost-found-tasks">
+          <div class="lost-found-option-switch">
+            <button class="lost-found-option active" type="button" data-lost-found-type="all">
+              <span class="option-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </span>
+              <span>All Items</span>
+            </button>
+            <button class="lost-found-option" type="button" data-lost-found-type="lost">
+              <span class="option-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3l8 8-8 8-8-8z" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </span>
+              <span>I Lost Something</span>
+            </button>
+            <button class="lost-found-option" type="button" data-lost-found-type="found">
+              <span class="option-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 13l4 4L19 0" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </span>
+              <span>I Found Something</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="lost-found-layout">
+          <section class="lost-found-list-panel">
+            <section class="lost-found-search-panel">
+              <div class="search-wrap">
+                <label class="search-label" for="searchInput">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.8-4.8" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </label>
+                <input type="search" id="searchInput" placeholder="Search lost or found items..." />
+              </div>
+
+              <div class="category-filter-bar">
+                <button class="category-filter active" type="button" data-category="All">All</button>
+                <button class="category-filter" type="button" data-category="ID & Card">ID &amp; Card</button>
+                <button class="category-filter" type="button" data-category="Electronics">Electronics</button>
+                <button class="category-filter" type="button" data-category="Books">Books</button>
+                <button class="category-filter" type="button" data-category="Accessories">Accessories</button>
+                <button class="category-filter" type="button" data-category="Stationery">Stationery</button>
+                <button class="category-filter" type="button" data-category="Personal">Personal</button>
+              </div>
+            </section>
+
+            <section class="lost-found-grid" id="lostFoundGrid">
+              <article class="lost-found-card" data-type="lost" data-category="ID & Card">
+                <div class="lost-found-card-image">
+                  <img src="assets/images/item-id.svg" alt="Student ID" />
+                  <span class="item-badge lost">Lost</span>
+                </div>
+                <div class="lost-found-card-body">
+                  <div class="card-top">
+                    <span class="item-category">ID &amp; Card</span>
+                    <span class="item-location">Library Block</span>
+                  </div>
+                  <h3 class="item-name">Student ID Card</h3>
+                  <div class="item-meta">
+                    <span class="item-date">Date: 11 Sep 2026</span>
+                    <span class="item-time">Time: 11:45 AM</span>
+                  </div>
+                  <p class="item-description">Blue KIET student ID card with name printed on the front. Likely left near the library print desk.</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary contact-btn" type="button">Contact</button>
+                    <span class="item-contact">Desk: Library Block</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="lost-found-card" data-type="found" data-category="Electronics">
+                <div class="lost-found-card-image">
+                  <img src="assets/images/item-laptop.svg" alt="USB Drive" />
+                  <span class="item-badge found">Found</span>
+                </div>
+                <div class="lost-found-card-body">
+                  <div class="card-top">
+                    <span class="item-category">Electronics</span>
+                    <span class="item-location">Innovation Center</span>
+                  </div>
+                  <h3 class="item-name">Blue USB Drive</h3>
+                  <div class="item-meta">
+                    <span class="item-date">Date: 12 Sep 2026</span>
+                    <span class="item-time">Time: 02:30 PM</span>
+                  </div>
+                  <p class="item-description">A compact 64GB USB drive with a KIET sticker and a white data label attached.</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary contact-btn" type="button">Contact</button>
+                    <span class="item-contact">Desk: Tech Wing</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="lost-found-card" data-type="lost" data-category="Books">
+                <div class="lost-found-card-image">
+                  <img src="assets/images/item-book.svg" alt="Book" />
+                  <span class="item-badge lost">Lost</span>
+                </div>
+                <div class="lost-found-card-body">
+                  <div class="card-top">
+                    <span class="item-category">Books</span>
+                    <span class="item-location">CSE Department</span>
+                  </div>
+                  <h3 class="item-name">Data Structures Textbook</h3>
+                  <div class="item-meta">
+                    <span class="item-date">Date: 10 Sep 2026</span>
+                    <span class="item-time">Time: 10:10 AM</span>
+                  </div>
+                  <p class="item-description">Red textbook with handwritten notes, cover marked with Data Structures and Algorithms.</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary contact-btn" type="button">Contact</button>
+                    <span class="item-contact">Desk: CSE HOD</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="lost-found-card" data-type="found" data-category="Accessories">
+                <div class="lost-found-card-image">
+                  <img src="assets/images/item-bag.svg" alt="Bag" />
+                  <span class="item-badge found">Found</span>
+                </div>
+                <div class="lost-found-card-body">
+                  <div class="card-top">
+                    <span class="item-category">Accessories</span>
+                    <span class="item-location">Main Gate</span>
+                  </div>
+                  <h3 class="item-name">Blue College Backpack</h3>
+                  <div class="item-meta">
+                    <span class="item-date">Date: 13 Sep 2026</span>
+                    <span class="item-time">Time: 05:20 PM</span>
+                  </div>
+                  <p class="item-description">Blue backpack with canvas body, one zipper pocket and a KIET workshop badge inside.</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary contact-btn" type="button">Contact</button>
+                    <span class="item-contact">Desk: Main Gate</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="lost-found-card" data-type="found" data-category="Stationery">
+                <div class="lost-found-card-image">
+                  <img src="assets/images/item-pen.svg" alt="Stationery" />
+                  <span class="item-badge found">Found</span>
+                </div>
+                <div class="lost-found-card-body">
+                  <div class="card-top">
+                    <span class="item-category">Stationery</span>
+                    <span class="item-location">Room 204</span>
+                  </div>
+                  <h3 class="item-name">Mechanical Pencil Set</h3>
+                  <div class="item-meta">
+                    <span class="item-date">Date: 14 Sep 2026</span>
+                    <span class="item-time">Time: 10:45 AM</span>
+                  </div>
+                  <p class="item-description">Pack of premium mechanical pencils and eraser found on the classroom desk.</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary contact-btn" type="button">Contact</button>
+                    <span class="item-contact">Desk: Room 204</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="lost-found-card" data-type="lost" data-category="Personal">
+                <div class="lost-found-card-image">
+                  <img src="assets/images/item-watch.svg" alt="Watch" />
+                  <span class="item-badge lost">Lost</span>
+                </div>
+                <div class="lost-found-card-body">
+                  <div class="card-top">
+                    <span class="item-category">Personal</span>
+                    <span class="item-location">Cafeteria</span>
+                  </div>
+                  <h3 class="item-name">Smart Watch</h3>
+                  <div class="item-meta">
+                    <span class="item-date">Date: 15 Sep 2026</span>
+                    <span class="item-time">Time: 01:15 PM</span>
+                  </div>
+                  <p class="item-description">Black smart watch with gray strap. Lost near cafeteria table 03.</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary contact-btn" type="button">Contact</button>
+                    <span class="item-contact">Desk: Cafeteria</span>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </section>
+
+          <aside class="lost-found-side">
+            <section class="panel submission-panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">Submit Item</span>
+                  <h3>Report a Case</h3>
+                </div>
+                <span class="panel-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+              </div>
+
+              <form class="lost-found-form" id="lostFoundForm">
+                <div class="form-row">
+                  <label for="reportType">I am reporting</label>
+                  <select id="reportType" name="reportType">
+                    <option value="lost">I Lost Something</option>
+                    <option value="found">I Found Something</option>
+                  </select>
+                </div>
+
+                <div class="form-row">
+                  <label for="itemCategory">Category</label>
+                  <select id="itemCategory" name="itemCategory">
+                    <option value="ID & Card">ID &amp; Card</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Books">Books</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Stationery">Stationery</option>
+                    <option value="Personal">Personal</option>
+                  </select>
+                </div>
+
+                <div class="form-row">
+                  <label for="itemName">Item name</label>
+                  <input type="text" id="itemName" name="itemName" placeholder="e.g. College bag" required />
+                </div>
+
+                <div class="form-row">
+                  <label for="itemLocation">Location</label>
+                  <input type="text" id="itemLocation" name="itemLocation" placeholder="e.g. Library Block" required />
+                </div>
+
+                <div class="form-row two-col">
+                  <div>
+                    <label for="itemDate">Date</label>
+                    <input type="date" id="itemDate" name="itemDate" required />
+                  </div>
+                  <div>
+                    <label for="itemTime">Time</label>
+                    <input type="time" id="itemTime" name="itemTime" required />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <label for="itemDescription">Description</label>
+                  <textarea id="itemDescription" name="itemDescription" rows="4" placeholder="Describe item color, brand, unique marks..." required></textarea>
+                </div>
+
+                <div class="form-row">
+                  <label for="contactInfo">Contact</label>
+                  <input type="text" id="contactInfo" name="contactInfo" placeholder="Phone / Desk / email" required />
+                </div>
+
+                <div class="form-row">
+                  <button class="btn btn-primary submit-btn" type="submit">Submit to Lost &amp; Found</button>
+                </div>
+
+                <div class="lost-found-message" id="lostFoundMessage"></div>
+              </form>
+            </section>
+
+            <section class="panel support-panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">Campus Desk</span>
+                  <h3>Recovery Desk Info</h3>
+                </div>
+              </div>
+              <div class="support-list">
+                <div class="support-item">
+                  <span class="support-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 11h7l3-7 3 14 2-7h4" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                  <span class="support-text">Library Block Counter</span>
+                  <span class="support-text-small">09:00 AM - 05:00 PM</span>
+                </div>
+                <div class="support-item">
+                  <span class="support-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                  <span class="support-text">lostfound@kiet.edu</span>
+                  <span class="support-text-small">System response: 24 hrs</span>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </section>
+      </main>
+    </section>
+  </div>
+
+
+</body>
+</html>

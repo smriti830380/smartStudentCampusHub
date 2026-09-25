@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syllabus | SMART STUDENT CAMPUS HUB</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-page">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-icon"><span class="brand-icon-inner">KIET</span></span>
+          <span class="brand-text">
+            <span class="brand-title">KIET</span>
+            <span class="brand-subtitle">Smart Campus</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="user-avatar" id="sidebarAvatar">AN</div>
+        <div>
+          <span class="user-name" id="sidebarStudentName">Student Name</span>
+          <span class="user-meta" id="sidebarStudentMeta">Course • Branch • Semester</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <span class="nav-title">Main Navigation</span>
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 10l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Overview</span>
+        </a>
+        <a class="side-link" href="academics.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Academics</span>
+        </a>
+        <a class="side-link active" href="syllabus.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 3h14v18H5z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Syllabus</span>
+        </a>
+        <a class="side-link" href="syllabus.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16v6H4zM4 15h16v6H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Classes</span>
+        </a>
+        <a class="side-link" href="exam-zone.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 19L12 3l8 16z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Attendance</span>
+        </a>
+        <a class="side-link" href="exam-zone.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 5h16v6H4zM4 13h16v6H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Exam Zone</span>
+        </a>
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Notices</span>
+        </a>
+        <a class="side-link" href="events.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 18l5-5 4 4 7-8" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Events</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 19a9 9 0 0 1 18 0" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Profile</span>
+        </a>
+        <a class="side-link" id="logoutLink" href="login.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 17l5-5-5-5" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <section class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div class="topbar-title">
+          <span class="breadcrumb">KIET / Academics / Syllabus</span>
+          <h1 id="welcomeName">Welcome, Student 👋</h1>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="icon-button" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.8-4.8" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </button>
+          <button class="icon-button" aria-label="Notifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7.5 0 10h12c3-2.5 0-3 0-10z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <span class="notification-dot"></span>
+          </button>
+          <div class="user-pills">
+            <span class="mini-avatar" id="miniAvatar">AN</span>
+            <span class="user-text" id="topbarStudentName">Student Name</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="syllabus-page">
+        <section class="panel syllabus-overview">
+          <div class="panel-heading">
+            <span class="panel-title">Syllabus Explorer</span>
+            <span class="panel-action">
+              <button class="btn btn-primary btn-small" type="button">Export</button>
+            </span>
+          </div>
+
+          <div class="syllabus-controls">
+            <div class="syllabus-controls-row">
+              <div class="control-field">
+                <label for="branchSelect">Branch</label>
+                <select id="branchSelect">
+                  <option value="CSE">Computer Science & Engineering</option>
+                  <option value="IT">Information Technology</option>
+                  <option value="ECE">Electronics & Communication</option>
+                  <option value="ME">Mechanical Engineering</option>
+                  <option value="EE">Electrical Engineering</option>
+                </select>
+              </div>
+
+              <div class="control-field">
+                <label for="semesterSelect">Semester</label>
+                <select id="semesterSelect">
+                  <option value="Semester 1">Semester 1</option>
+                  <option value="Semester 2">Semester 2</option>
+                  <option value="Semester 3">Semester 3</option>
+                  <option value="Semester 4">Semester 4</option>
+                  <option value="Semester 5">Semester 5</option>
+                  <option value="Semester 6">Semester 6</option>
+                  <option value="Semester 7">Semester 7</option>
+                  <option value="Semester 8">Semester 8</option>
+                </select>
+              </div>
+
+              <div class="control-field">
+                <label for="subjectSelect">Subject</label>
+                <select id="subjectSelect">
+                  <option value="Data Structures">Data Structures</option>
+                  <option value="Operating Systems">Operating Systems</option>
+                  <option value="DBMS">DBMS</option>
+                  <option value="Computer Networks">Computer Networks</option>
+                  <option value="Discrete Mathematics">Discrete Mathematics</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="search-area">
+              <div class="search-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.8-4.8" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+                <input type="search" id="topicSearch" placeholder="Search topics or units..." />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel syllabus-subject-panel">
+          <div class="syllabus-subject-top">
+            <div>
+              <span class="subject-kicker" id="subjectCodeLabel">CSE-501</span>
+              <h2 class="subject-heading" id="subjectTitle">Data Structures</h2>
+            </div>
+            <div class="syllabus-subject-meta">
+              <span class="meta-pill" id="subjectBranch">CSE</span>
+              <span class="meta-pill" id="subjectSemester">Semester 5</span>
+            </div>
+          </div>
+
+          <div class="syllabus-subject-details">
+            <div class="detail-stat">
+              <span class="detail-stat-label">Faculty</span>
+              <span class="detail-stat-value" id="facultyName">Dr. Shreya Verma</span>
+            </div>
+            <div class="detail-stat">
+              <span class="detail-stat-label">Credits</span>
+              <span class="detail-stat-value">4</span>
+            </div>
+            <div class="detail-stat">
+              <span class="detail-stat-label">Session</span>
+              <span class="detail-stat-value">2025-26</span>
+            </div>
+          </div>
+
+          <div class="accordion-list" id="syllabusAccordion">
+            <section class="accordion-item open">
+              <button class="accordion-trigger" type="button">
+                <span class="unit-number">Unit 1</span>
+                <span class="unit-title">Introduction to Data Structures</span>
+                <span class="unit-toggle">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <ul class="topic-list">
+                  <li>Algorithm analysis and complexity</li>
+                  <li>Abstract data types and interfaces</li>
+                  <li>Arrays, records and storage basics</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="accordion-item">
+              <button class="accordion-trigger" type="button">
+                <span class="unit-number">Unit 2</span>
+                <span class="unit-title">Linear Data Structures</span>
+                <span class="unit-toggle">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <ul class="topic-list">
+                  <li>Stacks and applications</li>
+                  <li>Queues and circular queues</li>
+                  <li>Linked lists and representation</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="accordion-item">
+              <button class="accordion-trigger" type="button">
+                <span class="unit-number">Unit 3</span>
+                <span class="unit-title">Trees and Graphs</span>
+                <span class="unit-toggle">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <ul class="topic-list">
+                  <li>Binary trees and traversal</li>
+                  <li>AVL trees and balanced trees</li>
+                  <li>Graph representation and BFS/DFS</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="accordion-item">
+              <button class="accordion-trigger" type="button">
+                <span class="unit-number">Unit 4</span>
+                <span class="unit-title">Searching and Sorting</span>
+                <span class="unit-toggle">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <ul class="topic-list">
+                  <li>Selection, insertion and merge sort</li>
+                  <li>Binary search and hashing</li>
+                  <li>Analysis of sorting methods</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="accordion-item">
+              <button class="accordion-trigger" type="button">
+                <span class="unit-number">Unit 5</span>
+                <span class="unit-title">Advanced Algorithms</span>
+                <span class="unit-toggle">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <ul class="topic-list">
+                  <li>Greedy approaches</li>
+                  <li>Dynamic programming examples</li>
+                  <li>Recursion and problem designing</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </section>
+      </section>
+    </section>
+  </div>
+
+
+</body>
+</html>

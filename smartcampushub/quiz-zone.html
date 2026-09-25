@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Zone | SMART STUDENT CAMPUS HUB</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-page">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-icon"><span class="brand-icon-inner">KIET</span></span>
+          <span class="brand-text">
+            <span class="brand-title">KIET</span>
+            <span class="brand-subtitle">Smart Campus</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="user-avatar" id="sidebarAvatar">AN</div>
+        <div>
+          <span class="user-name" id="sidebarStudentName">Student Name</span>
+          <span class="user-meta" id="sidebarStudentMeta">Course • Branch • Semester</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <span class="nav-title">Main Navigation</span>
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 10l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Overview</span>
+        </a>
+        <a class="side-link" href="academics.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Academics</span>
+        </a>
+        <a class="side-link" href="syllabus.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 3h14v18H5z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Syllabus</span>
+        </a>
+        <a class="side-link" href="exam-zone.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 5h16v6H4zM4 13h16v6H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Exam Zone</span>
+        </a>
+        <a class="side-link active" href="quiz-zone.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 3h7v7H5zM12 3h7v7h-7zM5 14h7v7H5zM12 14h7v7h-7z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Quiz Zone</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 19a9 9 0 0 1 18 0" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Profile</span>
+        </a>
+        <a class="side-link" id="logoutLink" href="login.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 17l5-5-5-5" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <section class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div class="topbar-title">
+          <span class="breadcrumb">KIET / Assessment / Quiz Zone</span>
+          <h1 id="welcomeName">Welcome, Student 👋</h1>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="icon-button" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.8-4.8" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </button>
+          <button class="icon-button" aria-label="Notifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7.5 0 10h12c3-2.5 0-3 0-10z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <span class="notification-dot"></span>
+          </button>
+          <div class="user-pills">
+            <span class="mini-avatar" id="miniAvatar">AN</span>
+            <span class="user-text" id="topbarStudentName">Student Name</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="quiz-zone-page">
+        <section class="panel quiz-zone-hero">
+          <div class="quiz-zone-title-row">
+            <div>
+              <span class="section-kicker">Assessment Lab</span>
+              <h2>Quiz Zone</h2>
+            </div>
+            <div class="subject-select-wrap">
+              <label for="quizSubjectSelect">Subject</label>
+              <select id="quizSubjectSelect">
+                <option value="Data Structures">Data Structures</option>
+                <option value="Java">Java</option>
+                <option value="HTML/CSS">HTML/CSS</option>
+                <option value="Python">Python</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="quiz-layout">
+          <section class="panel quiz-wrapper">
+            <div class="quiz-header">
+              <div class="quiz-meta-left">
+                <span class="quiz-counter" id="questionCounter">Question 1 of 5</span>
+                <span class="quiz-score" id="quizScore">Score: 0</span>
+              </div>
+              <div class="quiz-timer-wrap">
+                <span class="timer-label">Timer</span>
+                <span class="timer-value" id="quizTimer">30s</span>
+              </div>
+            </div>
+
+            <div class="quiz-progress">
+              <div class="quiz-progress-bar">
+                <span id="quizProgressBar"></span>
+              </div>
+            </div>
+
+            <article class="quiz-card">
+              <div class="question-category">
+                <span class="category-label" id="questionSubject">Data Structures</span>
+              </div>
+
+              <div class="question-text-wrap">
+                <h3 class="question-text" id="questionText">Which data structure uses FIFO?</h3>
+              </div>
+
+              <div class="answers-grid" id="answersGrid">
+                <button class="answer-option" type="button" data-answer="0">
+                  <span class="answer-index">A</span>
+                  <span class="answer-text">Stack</span>
+                </button>
+                <button class="answer-option" type="button" data-answer="1">
+                  <span class="answer-index">B</span>
+                  <span class="answer-text">Queue</span>
+                </button>
+                <button class="answer-option" type="button" data-answer="2">
+                  <span class="answer-index">C</span>
+                  <span class="answer-text">Tree</span>
+                </button>
+                <button class="answer-option" type="button" data-answer="3">
+                  <span class="answer-index">D</span>
+                  <span class="answer-text">Graph</span>
+                </button>
+              </div>
+
+              <div class="quiz-feedback" id="quizFeedback">Select an answer.</div>
+
+              <div class="quiz-actions">
+                <button class="btn btn-secondary btn-small" id="prevQuestion" type="button">Previous</button>
+                <button class="btn btn-primary btn-small" id="nextQuestion" type="button">Next</button>
+              </div>
+            </article>
+
+            <article class="quiz-result-screen" id="quizResultScreen">
+              <div class="result-card">
+                <span class="result-label">Quiz Complete</span>
+                <span class="result-score" id="finalScore">Score: 0 / 5</span>
+                <span class="result-message" id="resultMessage">Great effort!</span>
+                <button class="btn btn-primary btn-small" id="restartQuiz" type="button">Restart Quiz</button>
+              </div>
+            </article>
+          </section>
+
+          <aside class="panel quiz-aside">
+            <div class="panel-heading">
+              <span class="panel-title">Quiz Details</span>
+            </div>
+
+            <div class="quiz-aside-card">
+              <span class="quiz-aside-label">Current Subject</span>
+              <span class="quiz-aside-value" id="selectedSubjectName">Data Structures</span>
+            </div>
+
+            <div class="quiz-aside-card">
+              <span class="quiz-aside-label">Duration</span>
+              <span class="quiz-aside-value">05 Min</span>
+            </div>
+
+            <div class="quiz-aside-card">
+              <span class="quiz-aside-label">Knowledge Level</span>
+              <span class="quiz-aside-value">Foundation</span>
+            </div>
+
+            <div class="quiz-aside-card">
+              <span class="quiz-aside-label">Guidelines</span>
+              <ul class="quiz-guide-list">
+                <li>Read every question carefully.</li>
+                <li>Choose one correct answer.</li>
+                <li>Use Next and Previous controls.</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+      </section>
+    </section>
+  </div>
+
+
+</body>
+</html>

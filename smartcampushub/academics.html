@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academics | SMART STUDENT CAMPUS HUB</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-page">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-icon"><span class="brand-icon-inner">KIET</span></span>
+          <span class="brand-text">
+            <span class="brand-title">KIET</span>
+            <span class="brand-subtitle">Smart Campus</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="user-avatar" id="sidebarAvatar">AN</div>
+        <div>
+          <span class="user-name" id="sidebarStudentName">Student Name</span>
+          <span class="user-meta" id="sidebarStudentMeta">Course • Branch • Semester</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <span class="nav-title">Main Navigation</span>
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 10l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Overview</span>
+        </a>
+        <a class="side-link active" href="academics.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 5h16v14H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Academics</span>
+        </a>
+        <a class="side-link" href="syllabus.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 3h14v18H5z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Syllabus</span>
+        </a>
+        <a class="side-link" href="syllabus.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16v6H4zM4 15h16v6H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Classes</span>
+        </a>
+        <a class="side-link" href="exam-zone.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 19L12 3l8 16z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Attendance</span>
+        </a>
+        <a class="side-link" href="exam-zone.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 5h16v6H4zM4 13h16v6H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Exam Zone</span>
+        </a>
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Notices</span>
+        </a>
+        <a class="side-link" href="events.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 18l5-5 4 4 7-8" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Events</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 19a9 9 0 0 1 18 0" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Profile</span>
+        </a>
+        <a class="side-link" id="logoutLink" href="login.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 17l5-5-5-5" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <section class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div class="topbar-title">
+          <span class="breadcrumb">KIET / Academics</span>
+          <h1 id="welcomeName">Welcome, Student 👋</h1>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="icon-button" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.8-4.8" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </button>
+          <button class="icon-button" aria-label="Notifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7.5 0 10h12c3-2.5 0-3 0-10z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <span class="notification-dot"></span>
+          </button>
+          <div class="user-pills">
+            <span class="mini-avatar" id="miniAvatar">AN</span>
+            <span class="user-text" id="topbarStudentName">Student Name</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="academics-summary">
+        <section class="summary-card">
+          <span class="summary-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <div>
+            <span class="summary-label">Current Semester</span>
+            <span class="summary-value">Semester 5</span>
+          </div>
+        </section>
+        <section class="summary-card">
+          <span class="summary-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 19L9 14l4 4 7-10" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <div>
+            <span class="summary-label">Course Progress</span>
+            <span class="summary-value">76%</span>
+          </div>
+        </section>
+        <section class="summary-card">
+          <span class="summary-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 3v18M5 7h14M5 11h14M5 15h10" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <div>
+            <span class="summary-label">Subjects</span>
+            <span class="summary-value">06</span>
+          </div>
+        </section>
+      </section>
+
+      <section class="academics-page-content">
+        <section class="panel academics-header-panel">
+          <div class="panel-heading">
+            <span class="panel-title">Academic Records</span>
+            <span class="panel-action">
+              <button class="btn btn-primary btn-small" type="button">Download Report</button>
+            </span>
+          </div>
+
+          <div class="academic-top-grid">
+            <div class="academic-top-card">
+              <span class="academic-mini-label">Current Semester</span>
+              <span class="academic-mini-value">Semester 5</span>
+              <span class="academic-mini-detail">CSE • 2025-26</span>
+            </div>
+            <div class="academic-top-card">
+              <span class="academic-mini-label">CGPA</span>
+              <span class="academic-mini-value">8.7</span>
+              <span class="academic-mini-detail">Overall Performance</span>
+            </div>
+            <div class="academic-top-card">
+              <span class="academic-mini-label">Assignments Due</span>
+              <span class="academic-mini-value">03</span>
+              <span class="academic-mini-detail">This week</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel filter-panel">
+          <div class="panel-heading">
+            <span class="panel-title">Subjects</span>
+            <div class="filter-buttons">
+              <button class="filter-chip active" data-filter="All" type="button">All</button>
+              <button class="filter-chip" data-filter="Core" type="button">Core</button>
+              <button class="filter-chip" data-filter="Lab" type="button">Lab</button>
+              <button class="filter-chip" data-filter="Elective" type="button">Elective</button>
+            </div>
+          </div>
+
+          <div class="subject-grid">
+            <article class="subject-card" data-category="Core">
+              <div class="subject-card-head">
+                <span class="subject-code">CSE-501</span>
+                <span class="subject-category">Core</span>
+              </div>
+              <div class="subject-main">
+                <span class="subject-name">Data Structures</span>
+                <span class="subject-faculty">Faculty: Dr. Shreya Verma</span>
+              </div>
+              <div class="subject-details">
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Attendance</span>
+                  <span class="subject-detail-value high">95%</span>
+                </div>
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Assignment</span>
+                  <span class="subject-detail-value status-done">Completed</span>
+                </div>
+              </div>
+              <div class="subject-progress">
+                <div class="subject-progress-bar">
+                  <span style="width:82%;"></span>
+                </div>
+                <span class="subject-progress-text">Course Progress 82%</span>
+              </div>
+              <button class="btn subject-material" type="button">Study Material</button>
+            </article>
+
+            <article class="subject-card" data-category="Core">
+              <div class="subject-card-head">
+                <span class="subject-code">CSE-502</span>
+                <span class="subject-category">Core</span>
+              </div>
+              <div class="subject-main">
+                <span class="subject-name">Operating Systems</span>
+                <span class="subject-faculty">Faculty: Prof. Amit Sharma</span>
+              </div>
+              <div class="subject-details">
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Attendance</span>
+                  <span class="subject-detail-value high">88%</span>
+                </div>
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Assignment</span>
+                  <span class="subject-detail-value status-pending">Pending</span>
+                </div>
+              </div>
+              <div class="subject-progress">
+                <div class="subject-progress-bar">
+                  <span style="width:76%;"></span>
+                </div>
+                <span class="subject-progress-text">Course Progress 76%</span>
+              </div>
+              <button class="btn subject-material" type="button">Study Material</button>
+            </article>
+
+            <article class="subject-card" data-category="Lab">
+              <div class="subject-card-head">
+                <span class="subject-code">CSE-503L</span>
+                <span class="subject-category">Lab</span>
+              </div>
+              <div class="subject-main">
+                <span class="subject-name">DBMS Lab</span>
+                <span class="subject-faculty">Faculty: Dr. Kavita Singh</span>
+              </div>
+              <div class="subject-details">
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Attendance</span>
+                  <span class="subject-detail-value high">90%</span>
+                </div>
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Assignment</span>
+                  <span class="subject-detail-value status-done">Completed</span>
+                </div>
+              </div>
+              <div class="subject-progress">
+                <div class="subject-progress-bar">
+                  <span style="width:70%;"></span>
+                </div>
+                <span class="subject-progress-text">Course Progress 70%</span>
+              </div>
+              <button class="btn subject-material" type="button">Study Material</button>
+            </article>
+
+            <article class="subject-card" data-category="Core">
+              <div class="subject-card-head">
+                <span class="subject-code">CSE-504</span>
+                <span class="subject-category">Core</span>
+              </div>
+              <div class="subject-main">
+                <span class="subject-name">Computer Networks</span>
+                <span class="subject-faculty">Faculty: Prof. Rohan Iyer</span>
+              </div>
+              <div class="subject-details">
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Attendance</span>
+                  <span class="subject-detail-value medium">86%</span>
+                </div>
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Assignment</span>
+                  <span class="subject-detail-value status-pending">Pending</span>
+                </div>
+              </div>
+              <div class="subject-progress">
+                <div class="subject-progress-bar">
+                  <span style="width:68%;"></span>
+                </div>
+                <span class="subject-progress-text">Course Progress 68%</span>
+              </div>
+              <button class="btn subject-material" type="button">Study Material</button>
+            </article>
+
+            <article class="subject-card" data-category="Elective">
+              <div class="subject-card-head">
+                <span class="subject-code">CSE-525</span>
+                <span class="subject-category">Elective</span>
+              </div>
+              <div class="subject-main">
+                <span class="subject-name">Cloud Computing</span>
+                <span class="subject-faculty">Faculty: Dr. Nisha Kapoor</span>
+              </div>
+              <div class="subject-details">
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Attendance</span>
+                  <span class="subject-detail-value high">94%</span>
+                </div>
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Assignment</span>
+                  <span class="subject-detail-value status-done">Completed</span>
+                </div>
+              </div>
+              <div class="subject-progress">
+                <div class="subject-progress-bar">
+                  <span style="width:80%;"></span>
+                </div>
+                <span class="subject-progress-text">Course Progress 80%</span>
+              </div>
+              <button class="btn subject-material" type="button">Study Material</button>
+            </article>
+
+            <article class="subject-card" data-category="Core">
+              <div class="subject-card-head">
+                <span class="subject-code">CSE-506</span>
+                <span class="subject-category">Core</span>
+              </div>
+              <div class="subject-main">
+                <span class="subject-name">Discrete Mathematics</span>
+                <span class="subject-faculty">Faculty: Prof. Sneha Jain</span>
+              </div>
+              <div class="subject-details">
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Attendance</span>
+                  <span class="subject-detail-value medium">84%</span>
+                </div>
+                <div class="subject-detail">
+                  <span class="subject-detail-label">Assignment</span>
+                  <span class="subject-detail-value status-pending">Pending</span>
+                </div>
+              </div>
+              <div class="subject-progress">
+                <div class="subject-progress-bar">
+                  <span style="width:74%;"></span>
+                </div>
+                <span class="subject-progress-text">Course Progress 74%</span>
+              </div>
+              <button class="btn subject-material" type="button">Study Material</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel timetable-panel">
+          <div class="panel-heading">
+            <span class="panel-title">Timetable</span>
+            <span class="panel-action">
+              <a class="text-link" href="events.html">This Week</a>
+            </span>
+          </div>
+          <div class="timetable">
+            <div class="timetable-row">
+              <span class="timetable-day">Mon</span>
+              <span class="timetable-course">Data Structures</span>
+              <span class="timetable-time">09:00 - 10:00</span>
+              <span class="timetable-room">CSE-204</span>
+            </div>
+            <div class="timetable-row">
+              <span class="timetable-day">Tue</span>
+              <span class="timetable-course">Operating Systems</span>
+              <span class="timetable-time">10:15 - 11:15</span>
+              <span class="timetable-room">CSE-101</span>
+            </div>
+            <div class="timetable-row">
+              <span class="timetable-day">Wed</span>
+              <span class="timetable-course">DBMS Lab</span>
+              <span class="timetable-time">11:30 - 12:30</span>
+              <span class="timetable-room">Lab 3</span>
+            </div>
+            <div class="timetable-row">
+              <span class="timetable-day">Fri</span>
+              <span class="timetable-course">Computer Networks</span>
+              <span class="timetable-time">01:00 - 02:00</span>
+              <span class="timetable-room">CSE-301</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Zone | SMART STUDENT CAMPUS HUB</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-page">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-icon"><span class="brand-icon-inner">KIET</span></span>
+          <span class="brand-text">
+            <span class="brand-title">KIET</span>
+            <span class="brand-subtitle">Smart Campus</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="user-avatar" id="sidebarAvatar">AN</div>
+        <div>
+          <span class="user-name" id="sidebarStudentName">Student Name</span>
+          <span class="user-meta" id="sidebarStudentMeta">Course • Branch • Semester</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <span class="nav-title">Main Navigation</span>
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 10l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Overview</span>
+        </a>
+        <a class="side-link" href="academics.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Academics</span>
+        </a>
+        <a class="side-link" href="syllabus.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 3h14v18H5z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Syllabus</span>
+        </a>
+        <a class="side-link active" href="exam-zone.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 5h16v6H4zM4 13h16v6H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Exam Zone</span>
+        </a>
+        <a class="side-link" href="quiz-zone.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 3h7v7H5zM12 3h7v7h-7zM5 14h7v7H5zM12 14h7v7h-7z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Quiz Zone</span>
+        </a>
+        <a class="side-link" href="syllabus.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16v6H4zM4 15h16v6H4z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Classes</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a class="side-link" href="dashboard.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 19a9 9 0 0 1 18 0" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Profile</span>
+        </a>
+        <a class="side-link" id="logoutLink" href="login.html">
+          <span class="side-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 17l5-5-5-5" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <section class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div class="topbar-title">
+          <span class="breadcrumb">KIET / Academics / Exam Zone</span>
+          <h1 id="welcomeName">Welcome, Student 👋</h1>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="icon-button" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.8-4.8" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </button>
+          <button class="icon-button" aria-label="Notifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7.5 0 10h12c3-2.5 0-3 0-10z" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <span class="notification-dot"></span>
+          </button>
+          <div class="user-pills">
+            <span class="mini-avatar" id="miniAvatar">AN</span>
+            <span class="user-text" id="topbarStudentName">Student Name</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="exam-zone">
+        <section class="exam-zone-hero panel">
+          <div class="exam-zone-title-wrap">
+            <span class="panel-title">Exam Zone</span>
+            <h2>Assessment Dashboard</h2>
+          </div>
+          <div class="countdown-card">
+            <span class="countdown-label">Next Exam</span>
+            <span class="countdown-title">Data Structures</span>
+            <div class="countdown-timer" id="countdownTimer">
+              <span><span id="days">00</span><small>Days</small></span>
+              <span><span id="hours">00</span><small>Hours</small></span>
+              <span><span id="minutes">00</span><small>Minutes</small></span>
+              <span><span id="seconds">00</span><small>Seconds</small></span>
+            </div>
+            <span class="countdown-date">Sep 18, 2026 • 09:30 AM • CSE-204</span>
+          </div>
+        </section>
+
+        <section class="exam-summary-grid">
+          <article class="summary-card">
+            <span class="summary-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </span>
+            <div>
+              <span class="summary-label">Upcoming</span>
+              <span class="summary-value">04</span>
+            </div>
+          </article>
+          <article class="summary-card">
+            <span class="summary-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 19L12 3l8 16z" fill="none" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </span>
+            <div>
+              <span class="summary-label">Mid-Sem</span>
+              <span class="summary-value">02</span>
+            </div>
+          </article>
+          <article class="summary-card">
+            <span class="summary-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 3v18M5 7h14M5 11h14M5 15h10" fill="none" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </span>
+            <div>
+              <span class="summary-label">Practicals</span>
+              <span class="summary-value">03</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="exam-grid">
+          <section class="panel exam-main-panel">
+            <div class="panel-heading">
+              <span class="panel-title">Exam Schedule</span>
+              <span class="panel-action">
+                <a class="text-link" href="syllabus.html">Download Timetable</a>
+              </span>
+            </div>
+
+            <div class="exam-type-tabs">
+              <button class="exam-tab active" type="button" data-exam-type="upcoming">Upcoming</button>
+              <button class="exam-tab" type="button" data-exam-type="mid-sem">Mid-Sem</button>
+              <button class="exam-tab" type="button" data-exam-type="end-sem">End-Sem</button>
+              <button class="exam-tab" type="button" data-exam-type="practical">Practical</button>
+            </div>
+
+            <div class="exam-list-wrap">
+              <div class="exam-row-item" data-exam-category="upcoming">
+                <span class="exam-date-block">
+                  <span class="exam-day">18</span>
+                  <span class="exam-month">Sep</span>
+                </span>
+                <div class="exam-detail-block">
+                  <span class="exam-heading">Data Structures</span>
+                  <span class="exam-subheading">Mid Semester • Written • 09:30 AM</span>
+                </div>
+                <span class="exam-category-tag upcoming">Upcoming</span>
+              </div>
+
+              <div class="exam-row-item" data-exam-category="mid-sem">
+                <span class="exam-date-block">
+                  <span class="exam-day">22</span>
+                  <span class="exam-month">Sep</span>
+                </span>
+                <div class="exam-detail-block">
+                  <span class="exam-heading">DBMS</span>
+                  <span class="exam-subheading">Mid Semester • Written • 02:00 PM</span>
+                </div>
+                <span class="exam-category-tag mid">Mid-Sem</span>
+              </div>
+
+              <div class="exam-row-item" data-exam-category="end-sem">
+                <span class="exam-date-block">
+                  <span class="exam-day">10</span>
+                  <span class="exam-month">Oct</span>
+                </span>
+                <div class="exam-detail-block">
+                  <span class="exam-heading">Operating Systems</span>
+                  <span class="exam-subheading">End Semester • Written • 11:00 AM</span>
+                </div>
+                <span class="exam-category-tag end">End-Sem</span>
+              </div>
+
+              <div class="exam-row-item" data-exam-category="practical">
+                <span class="exam-date-block">
+                  <span class="exam-day">14</span>
+                  <span class="exam-month">Oct</span>
+                </span>
+                <div class="exam-detail-block">
+                  <span class="exam-heading">DBMS Lab</span>
+                  <span class="exam-subheading">Practical • Lab 3 • 10:00 AM</span>
+                </div>
+                <span class="exam-category-tag practical">Practical</span>
+              </div>
+
+              <div class="exam-row-item" data-exam-category="upcoming">
+                <span class="exam-date-block">
+                  <span class="exam-day">26</span>
+                  <span class="exam-month">Oct</span>
+                </span>
+                <div class="exam-detail-block">
+                  <span class="exam-heading">Computer Networks</span>
+                  <span class="exam-subheading">Internal Assessment • Written • 09:00 AM</span>
+                </div>
+                <span class="exam-category-tag upcoming">Upcoming</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel exam-side-panel">
+            <div class="panel-heading">
+              <span class="panel-title">Exam Instructions</span>
+            </div>
+            <div class="instruction-list">
+              <div class="instruction-row">
+                <span class="instruction-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 12l4 4L20 0" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+                <span class="instruction-text">Report 30 minutes before the scheduled time.</span>
+              </div>
+              <div class="instruction-row">
+                <span class="instruction-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 12l4 4L20 0" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+                <span class="instruction-text">Carry your student ID and admit card.</span>
+              </div>
+              <div class="instruction-row">
+                <span class="instruction-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 12l4 4L20 0" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+                <span class="instruction-text">Read all questions carefully before attempting.</span>
+              </div>
+              <div class="instruction-row">
+                <span class="instruction-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 12l4 4L20 0" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+                <span class="instruction-text">Submit practical records and lab materials on time.</span>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="panel results-panel">
+          <div class="panel-heading">
+            <span class="panel-title">Results</span>
+            <span class="panel-action">
+              <a class="text-link" href="syllabus.html">View All</a>
+            </span>
+          </div>
+
+          <div class="result-table-wrapper">
+            <table class="result-table">
+              <thead>
+                <tr>
+                  <th>Subject</th>
+                  <th>Marks</th>
+                  <th>Grade</th>
+                  <th>Credits</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Data Structures</td>
+                  <td>86</td>
+                  <td><span class="grade grade-a">A</span></td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Operating Systems</td>
+                  <td>78</td>
+                  <td><span class="grade grade-b">B+</span></td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>DBMS</td>
+                  <td>91</td>
+                  <td><span class="grade grade-a">A+</span></td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Computer Networks</td>
+                  <td>73</td>
+                  <td><span class="grade grade-b">B</span></td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </section>
+  </div>
+
+
+</body>
+</html>

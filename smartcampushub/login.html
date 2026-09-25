@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Login | SMART STUDENT CAMPUS HUB</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-body">
+  <div class="login-page-wrap">
+    <header class="login-header">
+      <a class="brand" href="index.html" aria-label="KIET Smart Campus Hub">
+        <span class="brand-icon">
+          <span class="brand-icon-inner">KIET</span>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">KIET</span>
+          <span class="brand-subtitle">Smart Student Campus Hub</span>
+        </span>
+      </a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <span class="theme-toggle-icon" id="themeToggleIcon">🌙</span>
+      </button>
+      <a class="btn btn-login-home" href="index.html">Back to Home</a>
+    </header>
+
+    <main class="login-layout">
+      <section class="login-visual">
+        <div class="login-visual-content">
+          <span class="login-kicker">KIET Student Portal</span>
+          <h1>Welcome to your Digital Campus</h1>
+          <p>
+            Access classes, notices, attendance, events, and academic resources
+            through one secure smart campus experience.
+          </p>
+
+          <div class="login-feature-list">
+            <div class="login-feature">
+              <span class="login-feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 19V8l8-5 8 5v11" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </span>
+              <span>Academic Dashboard</span>
+            </div>
+            <div class="login-feature">
+              <span class="login-feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 19a7 7 0 0 1 14 0" fill="none" stroke="currentColor" stroke-width="2" />
+                  <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </span>
+              <span>Student Profile</span>
+            </div>
+            <div class="login-feature">
+              <span class="login-feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 5h16v14H4z" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </span>
+              <span>Student Notices</span>
+            </div>
+          </div>
+
+          <div class="login-card-preview">
+            <div class="preview-top">
+              <span class="preview-title">Campus Status</span>
+              <span class="preview-live">
+                <span class="live-dot"></span>
+                Online
+              </span>
+            </div>
+            <div class="preview-data">
+              <div>
+                <span class="preview-number">06</span>
+                <span class="preview-label">Classes Today</span>
+              </div>
+              <div>
+                <span class="preview-number">19</span>
+                <span class="preview-label">Notices</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="login-panel">
+        <div class="login-form-wrap">
+          <div class="login-form-header">
+            <span class="section-kicker light-kicker">Student Login</span>
+            <h2>Welcome Back</h2>
+            <p>Enter your KIET student details to continue.</p>
+          </div>
+
+          <div class="auth-tabs">
+            <button class="auth-tab active" type="button" data-auth-tab="login">Student Login</button>
+            <button class="auth-tab" type="button" data-auth-tab="signup">Sign Up</button>
+          </div>
+
+          <div class="auth-forms">
+            <form class="login-form auth-form active" id="loginForm" novalidate>
+              <div class="form-group">
+                <label for="emailRoll">Email / Roll Number</label>
+                <div class="input-with-icon">
+                  <span class="input-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                  <input type="text" id="emailRoll" name="emailRoll" placeholder="student@kiet.edu" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-with-icon">
+                  <span class="input-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 11h14v8H5z" fill="none" stroke="currentColor" stroke-width="2" />
+                      <path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                  <input type="password" id="password" name="password" placeholder="Enter password" required />
+                </div>
+              </div>
+
+              <div class="login-options">
+                <label class="check-row">
+                  <input type="checkbox" id="rememberMe" name="remember" checked />
+                  <span>Remember me</span>
+                </label>
+                <a class="text-link" href="login.html">Forgot password?</a>
+              </div>
+
+              <div id="loginMessage" class="auth-message" role="status" aria-live="polite"></div>
+
+              <button class="btn btn-login-submit" type="submit">
+                Login to Dashboard
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M13 3l9 9-9 9" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </button>
+
+              <div class="divider">
+                <span>or</span>
+              </div>
+
+              <button class="btn btn-outline-form" type="button" id="showSignup">
+                Create Student Account
+              </button>
+            </form>
+
+            <form class="signup-form auth-form" id="signupForm" novalidate>
+              <div class="form-group">
+                <label for="studentName">Student Name</label>
+                <div class="input-with-icon">
+                  <span class="input-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 19a7 7 0 0 1 14 0" fill="none" stroke="currentColor" stroke-width="2" />
+                      <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                  <input type="text" id="studentName" name="studentName" placeholder="Enter full name" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="rollNumber">Roll Number</label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+                      </svg>
+                    </span>
+                    <input type="text" id="rollNumber" name="rollNumber" placeholder="KIET-CS-2154" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="signupEmail">Email</label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+                      </svg>
+                    </span>
+                    <input type="email" id="signupEmail" name="signupEmail" placeholder="student@kiet.edu" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="course">Course</label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 19L12 3l8 16z" fill="none" stroke="currentColor" stroke-width="2" />
+                      </svg>
+                    </span>
+                    <select id="course" name="course" required>
+                      <option value="">Select course</option>
+                      <option value="B.Tech">B.Tech</option>
+                      <option value="MCA">MCA</option>
+                      <option value="BBA">BBA</option>
+                      <option value="MBA">MBA</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="branch">Branch</label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 19L12 3l8 16z" fill="none" stroke="currentColor" stroke-width="2" />
+                      </svg>
+                    </span>
+                    <select id="branch" name="branch" required>
+                      <option value="">Select branch</option>
+                      <option value="CSE">Computer Science & Engineering</option>
+                      <option value="IT">Information Technology</option>
+                      <option value="ECE">Electronics & Communication Engineering</option>
+                      <option value="ME">Mechanical Engineering</option>
+                      <option value="EE">Electrical Engineering</option>
+                      <option value="Civil">Civil Engineering</option>
+                      <option value="Computer Applications">Computer Applications</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="semester">Semester</label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 5h16v14H4z" fill="none" stroke="currentColor" stroke-width="2" />
+                      </svg>
+                    </span>
+                    <select id="semester" name="semester" required>
+                      <option value="">Select semester</option>
+                      <option value="Semester 1">Semester 1</option>
+                      <option value="Semester 2">Semester 2</option>
+                      <option value="Semester 3">Semester 3</option>
+                      <option value="Semester 4">Semester 4</option>
+                      <option value="Semester 5">Semester 5</option>
+                      <option value="Semester 6">Semester 6</option>
+                      <option value="Semester 7">Semester 7</option>
+                      <option value="Semester 8">Semester 8</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="attendance">Attendance</label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 19L12 3l8 16z" fill="none" stroke="currentColor" stroke-width="2" />
+                      </svg>
+                    </span>
+                    <input type="number" id="attendance" name="attendance" min="0" max="100" placeholder="Attendance %" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="classesToday">Classes Today</label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+                      </svg>
+                    </span>
+                    <input type="number" id="classesToday" name="classesToday" min="0" max="10" placeholder="Classes Today" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <div class="input-with-icon">
+                  <span class="input-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 11h14v8H5z" fill="none" stroke="currentColor" stroke-width="2" />
+                      <path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                  <input type="password" id="signupPassword" name="signupPassword" placeholder="Create password" required />
+                </div>
+              </div>
+
+              <div id="signupMessage" class="auth-message" role="status" aria-live="polite"></div>
+
+              <button class="btn btn-login-submit" type="submit">
+                Create Student Account
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M13 3l9 9-9 9" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </button>
+
+              <div class="divider">
+                <span>or</span>
+              </div>
+
+              <button class="btn btn-outline-form" type="button" id="showLogin">
+                Already have an account?
+              </button>
+            </form>
+          </div>
+
+          <div class="login-footer">
+            <span>Need assistance?</span>
+            <a href="grievance.html">Contact Student Support</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+</body>
+</html>
